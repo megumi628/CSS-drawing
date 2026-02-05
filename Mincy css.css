@@ -1,0 +1,204 @@
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #E8DDD3 0%, #D5C9BE 100%);
+        }
+
+        .toast-container {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.3));
+        }
+
+        .toast {
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            background: linear-gradient(135deg, #F4D09A 0%, #E8B968 50%, #D9A857 100%);
+            border-radius: 15px;
+            box-shadow: 
+                inset -5px -5px 15px rgba(0, 0, 0, 0.1),
+                inset 5px 5px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .toast::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 15px;
+            border: 8px solid #C8964F;
+            box-sizing: border-box;
+        }
+
+        .bacon-1 {
+            position: absolute;
+            top: 25px;
+            left: 30px;
+            width: 100px;
+            height: 45px;
+            background: linear-gradient(180deg, #C85746 0%, #A4433A 50%, #8B3530 100%);
+            border-radius: 8px 8px 15px 5px;
+            transform: rotate(-15deg);
+            box-shadow: 
+                inset 0 2px 5px rgba(255, 255, 255, 0.2),
+                inset 0 -2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .bacon-1::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            right: 10%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            transform: translateY(-50%);
+        }
+
+        .bacon-2 {
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            width: 120px;
+            height: 50px;
+            background: linear-gradient(180deg, #D15E4C 0%, #B54A3E 50%, #963D35 100%);
+            border-radius: 12px 8px 8px 18px;
+            transform: rotate(25deg);
+            box-shadow: 
+                inset 0 2px 5px rgba(255, 255, 255, 0.2),
+                inset 0 -2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .bacon-2::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            right: 10%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+            transform: translateY(-50%);
+        }
+
+        .bacon-3 {
+            position: absolute;
+            bottom: 45px;
+            left: 40px;
+            width: 110px;
+            height: 48px;
+            background: linear-gradient(180deg, #BA4D3E 0%, #9F3F35 50%, #7D302A 100%);
+            border-radius: 10px 15px 10px 8px;
+            transform: rotate(-8deg);
+            box-shadow: 
+                inset 0 2px 5px rgba(255, 255, 255, 0.2),
+                inset 0 -2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .bacon-3::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            right: 10%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 4px;
+            transform: translateY(-50%);
+        }
+
+        .egg-white {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height: 160px;
+            background: radial-gradient(ellipse at center, #FFFFFF 0%, #F8F8F8 60%, #E8E8E8 100%);
+            border-radius: 50% 48% 52% 49% / 48% 51% 49% 52%;
+            box-shadow: 
+                inset 0 -3px 8px rgba(0, 0, 0, 0.08),
+                0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .egg-white::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 20px;
+            width: 35px;
+            height: 35px;
+            background: radial-gradient(circle, #FFFFFF 0%, #F0F0F0 100%);
+            border-radius: 50%;
+            box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .egg-white::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: 25px;
+            width: 40px;
+            height: 30px;
+            background: radial-gradient(ellipse, #FFFFFF 0%, #F0F0F0 100%);
+            border-radius: 50%;
+            box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .egg-yolk {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 85px;
+            height: 85px;
+            background: radial-gradient(circle at 35% 35%, #FFD54F 0%, #FFA726 40%, #FF8F00 100%);
+            border-radius: 50%;
+            box-shadow: 
+                inset -3px -3px 8px rgba(0, 0, 0, 0.15),
+                inset 3px 3px 8px rgba(255, 255, 255, 0.3),
+                0 3px 10px rgba(255, 140, 0, 0.3);
+        }
+
+        .egg-yolk::before {
+            content: '';
+            position: absolute;
+            top: 18px;
+            left: 22px;
+            width: 25px;
+            height: 20px;
+            background: radial-gradient(ellipse, rgba(255, 255, 255, 0.6) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .egg-yolk::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            width: 15px;
+            height: 12px;
+            background: radial-gradient(ellipse, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .shadow {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 260px;
+            height: 20px;
+            background: radial-gradient(ellipse, rgba(0, 0, 0, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(8px);
+        }
